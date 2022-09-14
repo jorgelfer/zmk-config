@@ -33,17 +33,17 @@
 
 		lower_layer {
 // ------------------------------------------------------------------------------------------------------------
-// | F12   |  F1 |  F2 |  F3       |  F4    |  F5      |                |  F6  |  F7   |  F8   |  F9   |  F10  |  BSPC  |
-// |       |     |     |           |  redo  |          |                | yunk | undo  |  back |forward| paste |        |
-// |       |     | save|           | search |          |                |  <-  |   v   |  ^    |  ->   |   {   |    }   |
-// | SHIFT |     |     |  Cut      | CRL+v  |          |      |  |      |  +   |   -   |   =   |       |       |  SHIFT |
-//                     |           |        |          |      |  |      |      |       |       |
+// | F12   |  F1 |  F2 |  F3       |  F4    |  F5     |                |  F6  |  F7   |  F8   |  F9   |  F10  |  BSPC  |
+// |       |     |     |           |  redo  |         |                | yunk | undo  |  back |forward| paste |        |
+// |       |     | save|           | search |         |                |  <-  |   v   |  ^    |  ->   |   {   |    }   |
+// | SHIFT |     |     |  Cut      | CRL+v  |         |      |  |      |  +   |   -   |   =   |       |       |  SHIFT |
+//                     |           |        |         |      |  |      |      |       |       |
 			bindings = <
-&kp F12   &kp F1 &kp F2    &kp F3    &kp F4      &kp F5                &kp F6      &kp F7     &kp F8    &kp F9    &kp F10   &kp BSPC 
-&trans    &trans &trans    &trans    &kp K_REDO  &trans                &kp LC(C)   &kp LC(Z)  &kp LC(I) &kp LC(O) &kp LC(V) &trans
-&trans    &trans &kp LC(S) &trans    &kp LC(F)   &trans                &kp LEFT    &kp DOWN   &kp UP    &kp RIGHT &kp LBRC  &kp RBRC
-&kp LSHFT &trans &trans    &kp LC(X) &kp LC(V)   &trans  &trans &trans &kp KP_PLUS &kp MINUS  &kp EQUAL &trans    &trans    &kp RSHFT
-                           &trans    &trans      &trans  &trans &trans &trans      &trans     &trans
+&trans    &trans &trans    &trans    &trans     &trans                &trans      &trans     &trans    &trans    &trans    &trans
+&kp F1    &kp F2 &kp F3    &kp F4    &kp F5     &kp F6                &kp F7      &kp F8     &kp F9    &kp F10   &kp F11   &kp F12 
+&trans    &trans &kp LC(S) &trans    &kp LC(F)  &trans                &kp LEFT    &kp DOWN   &kp UP    &kp RIGHT &kp LBRC  &kp RBRC
+&kp LSHFT &trans &trans    &kp LC(X) &kp LC(V)  &trans  &trans &trans &kp KP_PLUS &kp MINUS  &kp EQUAL &trans    &trans    &kp RSHFT
+                           &trans    &trans     &trans  &trans &trans &trans      &trans     &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
