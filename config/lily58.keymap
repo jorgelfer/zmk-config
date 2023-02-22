@@ -51,17 +51,17 @@
 
 		raise_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |       |     | CRL+W | CRL+SHIFT+E  |CRL+R |CRL+T |                   |      |       |       |      |       |       |
-// |       |     |       |              |      |      |                   |CRL+Y |CRL+U  |CRL+I  |CRL+O |CRL+P  |       |
+// |       |     |       |              |      |      |                   |      |       |       |      |       |       |
+// |       |     | CRL+W | CRL+SHIFT+E  | CRL+R|CRL+T |                   |CRL+Y |CRL+U  |CRL+I  |CRL+O |CRL+P  |       |
 // |       |     |       |              |      |      |                   |CRL+H |CRL+J  |CRL+K  |CRL+L |   [   |    ]  |
 // |       |     |       |              |      |      |        |  |       |CRL+N |CRL+M  |       |      |       |       |
 //                       |              |      |      |        |  |       |      |       |       |
 			bindings = <
-&trans &trans  &trans &kp RC(LS(E)) &trans   &trans                   &trans    &trans    &trans     &trans    &trans    &trans
-&trans &trans  &trans &trans        &trans   &trans                   &kp RC(Y) &kp RC(U) &kp RC(I)  &kp RC(O) &kp RC(P) &trans
-&trans &trans  &trans &trans        &trans   &trans                   &kp RC(H) &kp RC(J) &kp RC(K)  &kp RC(L) &kp LBKT  &kp RBKT
-&trans &trans  &trans &trans        &trans   &trans &trans   &trans   &kp RC(N) &kp RC(M) &trans     &trans    &trans    &trans
-                             &trans    &trans       &trans   &trans   &trans &trans    &trans    &trans
+&trans &trans  &trans    &trans        &trans   &trans                   &trans    &trans    &trans     &trans    &trans    &trans
+&trans &trans  &kp RC(W) &kp RC(LS(E)) &kp RC(R)&kp RC(T)                &kp RC(Y) &kp RC(U) &kp RC(I)  &kp RC(O) &kp RC(P) &trans
+&trans &trans  &trans    &trans        &trans   &trans                   &kp RC(H) &kp RC(J) &kp RC(K)  &kp RC(L) &kp LBKT  &kp RBKT
+&trans &trans  &trans    &trans        &trans   &trans &trans   &trans   &kp RC(N) &kp RC(M) &trans     &trans    &trans    &trans
+                             &trans    &trans   &trans &trans   &trans &trans    &trans    &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
