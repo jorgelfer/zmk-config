@@ -33,17 +33,17 @@
 
 		lower_layer {
 // ------------------------------------------------------------------------------------------------------------
-// | F1    |  F2 |  F3 |  F4       |  F5    |  F6     |                |  F7  |  F8   |  F9   |  F10  |  F11  |   F12  |
-// |       |     |CRL+W|CRL+SHIFT+E| CRL+R  |CRL+T    |                |      |       |       |       |       |        |
-// |       |CRL+A|CRL+S|  CRL+D    | CRL+F  |CRL+G    |                |  <-  |   v   |  ^    |  ->   |   {   |    }   |
-// | SHIFT |CRL+Z|CRL+X|  CRL+C    | CRL+v  |CRL+B    |      |  |      |  +   |   -   |   =   |  _    |   [   |    ]   |
-//                     |           |        |         |      |  |      |      |       |       |
+// | F1    |  F2 |  F3 |  F4       |  F5    |  F6     |                      |  F7  |  F8   |  F9   |  F10  |  F11  |   F12  |
+// |       |     |CRL+W|CRL+SHIFT+E| CRL+R  |CRL+T    |                      |      |       |       |       |       |        |
+// |       |CRL+A|CRL+S|  CRL+D    | CRL+F  |CRL+G    |                      |  <-  |   v   |  ^    |  ->   |   {   |    }   |
+// | SHIFT |CRL+Z|CRL+X|  CRL+C    | CRL+v  |CRL+B    |      |  |            |  +   |   -   |   =   |  _    |   [   |    ]   |
+//                     |           |        |         |      |  |SHIFT+ENTER |      |       |       |
 			bindings = <
-&kp F1    &kp F2    &kp F3    &kp F4        &kp F5     &kp F6                  &kp F7      &kp F8     &kp F9    &kp F10        &kp F11   &kp F12 
-&trans    &trans    &kp LC(W) &kp RC(LS(E)) &kp RC(R)  &kp RC(T)               &trans      &trans     &trans    &trans         &trans    &trans
-&trans    &kp LC(A) &kp LC(S) &kp LC(D)     &kp LC(F)  &kp LC(G)               &kp LEFT    &kp DOWN   &kp UP    &kp RIGHT      &kp LBRC  &kp RBRC
-&kp LSHFT &kp LC(Z) &kp LC(X) &kp LC(C)     &kp LC(V)  &kp LC(B) &trans &trans &kp KP_PLUS &kp MINUS  &kp EQUAL &kp UNDERSCORE &kp LBKT  &kp RBKT
-                               &trans    &trans     &trans       &trans &trans &trans      &trans     &trans
+&kp F1    &kp F2    &kp F3    &kp F4        &kp F5     &kp F6                       &kp F7      &kp F8     &kp F9    &kp F10        &kp F11   &kp F12 
+&trans    &trans    &kp LC(W) &kp RC(LS(E)) &kp RC(R)  &kp RC(T)                    &trans      &trans     &trans    &trans         &trans    &trans
+&trans    &kp LC(A) &kp LC(S) &kp LC(D)     &kp LC(F)  &kp LC(G)                    &kp LEFT    &kp DOWN   &kp UP    &kp RIGHT      &kp LBRC  &kp RBRC
+&kp LSHFT &kp LC(Z) &kp LC(X) &kp LC(C)     &kp LC(V)  &kp LC(B) &trans &trans      &kp KP_PLUS &kp MINUS  &kp EQUAL &kp UNDERSCORE &kp LBKT  &kp RBKT
+                               &trans    &trans     &trans       &trans &kp LS(RET) &trans      &trans     &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
