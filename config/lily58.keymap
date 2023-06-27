@@ -53,15 +53,15 @@
 // ------------------------------------------------------------------------------------------------------------
 // |   |      |       |      |      |      |                |         |          |        |         | DEL      |      |
 // |   |      |       |      |      |      |                |         |CRL+U     | CRL+I  |CRL+O    |  \       |      |
-// |   |      |       |      |      |      |                | CRL+H   |          |        |CRL+L    |  '       |      |
+// |   |      |       |  {   |  }   |      |                | CRL+H   |   [      |    ]   |CRL+L    |  '       |      |
 // |   |      |       |      |      |      |     |  |       | CRL+N   |CRL+M     |        |         |SHIFT     |      |
 //                    |      |      |      |     |  |       |         |          |        |
 			bindings = <
-&trans  &trans &trans  &trans  &trans &trans                  &trans    &trans    &trans    &trans    &kp DEL    &trans
-&trans  &trans &trans  &trans  &trans &trans                  &trans    &kp RC(U) &kp RC(I) &kp RC(O) &kp BSLH   &trans
-&trans  &trans &trans  &trans  &trans &trans                  &kp RC(H) &trans    &trans    &kp RC(L) &kp SQT    &trans
-&trans  &trans &trans  &trans  &trans &trans &trans   &trans  &kp RC(N) &kp RC(M) &trans    &trans    &kp RSHFT  &trans
-                       &trans  &trans &trans &trans   &trans  &trans    &trans    &trans
+&trans  &trans &trans  &trans   &trans   &trans                  &trans    &trans    &trans    &trans    &kp DEL    &trans
+&trans  &trans &trans  &trans   &trans   &trans                  &trans    &kp RC(U) &kp RC(I) &kp RC(O) &kp BSLH   &trans
+&trans  &trans &trans  &kp LBRC &kp RBRC &trans                  &kp RC(H) &kp LBKT  &kp RBKT  &kp RC(L) &kp SQT    &trans
+&trans  &trans &trans  &trans   &trans   &trans &trans   &trans  &kp RC(N) &kp RC(M) &trans    &trans    &kp RSHFT  &trans
+                       &trans   &trans   &trans &trans   &trans  &trans    &trans    &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
