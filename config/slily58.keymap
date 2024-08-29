@@ -50,13 +50,13 @@
 
 		raise_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |   |      |       |      |      |      |                |         |          |        |         |     |      |
-// |   |      |       |      |      |      |                |         |CRL+U     | CRL+I  |CRL+O    |     |      |
-// |   |      |       |  {   |  }   |      |                | CRL+H   |   [      |    ]   |CRL+L    |     |      |
-// |   |      |       |      |      |      |     |  |       | CRL+N   |CRL+M     |        |         |     |      |
-//                    |      |      |      |     |  |       |         |          |        |
+// |   |      |       |      |      | SHIFT + F5  |                |         |          |        |         |     |      |
+// |   |      |       |      |      |             |                |         |CRL+U     | CRL+I  |CRL+O    |     |      |
+// |   |      |       |  {   |  }   |             |                | CRL+H   |   [      |    ]   |CRL+L    |     |      |
+// |   |      |       |      |      |             |     |  |       | CRL+N   |CRL+M     |        |         |     |      |
+//                    |      |      |             |     |  |       |         |          |        |
 			bindings = <
-&trans  &trans &trans  &trans   &trans   &trans                  &trans    &trans    &trans    &trans    &trans  &trans
+&trans  &trans &trans  &trans   &trans   &kp RS(F5)                  &trans    &trans    &trans    &trans    &trans  &trans
 &trans  &trans &trans  &trans   &trans   &trans                  &trans    &kp RC(U) &kp RC(I) &kp RC(O) &trans  &trans
 &trans  &trans &trans  &kp LBRC &kp RBRC &trans                  &kp RC(H) &kp LBKT  &kp RBKT  &kp RC(L) &trans  &trans
 &trans  &trans &trans  &trans   &trans   &trans &trans   &trans  &kp RC(N) &kp RC(M) &trans    &trans    &trans  &trans
